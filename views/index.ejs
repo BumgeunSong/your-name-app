@@ -1,6 +1,27 @@
 <%- include('partials/head') %>
 
-<h1 class="display-1">Hello World!</h1>
-<h2>여기에 '너의 이름은' 앱을 만들어보자!</h2>
+<div class="container-xs d-flex flex-column justify-content-center align-items-center border">
+    <div class="row">
+    <h1 class="display-1">제목이 담아야할 키워드를 적어주세요</h1>
+    </div>
+    <div class="row">
+        <form action="" method="POST">
+            <div class="mb-3">
+              <label for="keyword1" class="form-label">1번째 키워드</label>
+              <input type="text" class="form-control" id="keyword1">
+            </div>
+            <div class="mb-3">
+                <label for="keyword2" class="form-label">2번째 키워드</label>
+                <input type="text" class="form-control" id="keyword2">
+            </div>
+            <div class="mb-3">
+                <label for="keyword3" class="form-label">3번째 키워드</label>
+                <input type="text" class="form-control" id="keyword3">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>
+
 
 <%- include('partials/footer') %>
